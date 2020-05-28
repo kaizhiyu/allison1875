@@ -39,19 +39,19 @@ public class CompileSourceAndCopyDependencyTool {
      */
     private static final Path sourceRootRelativeToModulePath = Paths.get("src/main/java");
 
-    private static final Path javaHome = Paths.get("/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home");
+    private static final Path javaHome = Paths.get("/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home");
 
-    private static final Path mavenHome = Paths.get("/usr/local/Cellar/maven/3.6.3_1");
+    private static final Path mavenHome = Paths.get("/usr/local/Cellar/maven/3.6.1/libexec");
 
     /**
      * Maven全局配置setting.xml的路径
      */
-    private static final Path mavenGlobalSettingXml = Paths.get("/Users/deolin/OneDrive/secret/xxx-settings.xml");
+    private static final Path mavenGlobalSettingXml = Paths.get("/Users/chenchen/.m2/settings.xml");
 
     /**
      * mvn dependency:copy-dependencies 命令会将jar拷贝到这个目录下
      */
-    private static final Path externalJarsBasePath = Paths.get("/Users/deolin/Documents/project-repo/external-jars");
+    private static final Path externalJarsBasePath = Paths.get("/Users/chenchen/Documents/project-repo/external-jars");
 
     public static void main(String[] args) {
         ParserCollectionStrategy collectionStrategy = new ParserCollectionStrategy();
